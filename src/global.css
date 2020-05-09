@@ -1,0 +1,84 @@
+* {
+  color: #4a4a4a;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: rgb(139, 139, 139);
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container h1 {
+  margin-top: 20px;
+}
+
+.container h3 {
+  margin-top: 50px;
+}
+
+.container h3 span {
+  color: #000;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.container .item {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  width: 260px;
+}
+
+.container .item label {
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 0.5s;
+}
+
+.container .item.on label {
+  color: green;
+}
+
+.container .item.off label {
+  color: gray;
+}
+
+.container .item svg {
+  height: 60px;
+  width: 80px;
+}
+
+.container .item svg .inner {
+  transition: 0.4s;
+}
+
+.container .item.on svg .inner {
+  fill: green;
+  transform: translate(30px, 0px);
+}
+
+.container .item.off svg .inner {
+  fill: gray;
+  transform: translate(0px, 0px);
+}
+
+.container .item svg .outer {
+  transition: 0.4s;
+}
+
+.container .item.on svg .outer {
+  fill: green;
+}
+
+.container .item.off svg .outer {
+  fill: gray;
+}
